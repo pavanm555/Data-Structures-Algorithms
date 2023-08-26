@@ -35,13 +35,13 @@ int height(Node*root){
     int h1 = height(root->left);
     int h2 = height(root->right);
 
-    return max(h1,h1)+1;    
+    return max(h1,h2)+1;    
 } 
 
 int main(){
     Node * root = buildTree();
-    int h = height(root);
-    cout<< h << endl;
+   
+    cout<< height(root) << endl;
 
     return 0;
 }
