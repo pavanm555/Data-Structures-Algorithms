@@ -1,3 +1,5 @@
+// Complexity of Heapify is O(logN)
+
 #include<vector>
 using namespace std;
 
@@ -19,8 +21,8 @@ class Heap{
             swap(v[i],v[minIdx]);
             heapify(minIdx);
         }
-
     }
+    
 public:
     Heap(int default_size=10){
         v.reserve(default_size+1);

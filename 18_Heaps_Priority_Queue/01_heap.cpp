@@ -3,6 +3,8 @@
 // 3.Heap Order Property - Max heap (parent >= children)
 //                         Min heap (parent <= children)
 
+// Complexity of Heapify is O(logN)
+
 /*
 
  Heaps as an Array
@@ -17,17 +19,17 @@
 using namespace std;
 
 int main(){
-    Heap h;
-    h.push(10);
-    h.push(20);
-    h.push(30);
-    h.push(25);
-    h.push(70);
-    h.push(40);
-    h.push(50);
-    
-    cout<< h.top();
-    
+    int arr[] = {10,20,30,25,70,40,50};
 
-  return 0;
+    Heap h;
+    for(int i:arr){
+        h.push(i);
+    }    
+    
+    while(!h.empty()){
+        cout<< h.top() << endl;
+        h.pop();
+    }
+  
+    return 0;
 }
