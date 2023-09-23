@@ -1,0 +1,15 @@
+-> Support Insertion, Deletion, Search in average case O(1) time
+-> Unordered Data Structure
+
+Key Components
+-> Hash function
+-> Hash table
+-> Collision handling scheme
+
+
+Good Hash Function 
+-> Reduces the chance of collision - Distribute keys uniformly over the table
+-> Should be fast to compute
+
+-> h(key) = key % table size
+-> Better if table size is a prime number
