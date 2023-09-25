@@ -113,6 +113,21 @@ public:
         return NULL;
     }
 
+    //supercool functionality!
+
+    T& operator[](string key){
+        //return the value
+        //if key is not found then create a new node and return 
+        //return the existing node
+        T* valueFound = search(key);
+        if(valueFound==NULL){
+            T object;
+            insert(key,object);
+            valueFound = search(key);
+        }
+        return *valueFound;
+    }
+
     void print(){
         //iterate over buckets
         for(int i=0;i<ts;i++){

@@ -21,8 +21,15 @@ int main(){
         cout<< "Price of fruit is "<< *price << endl;
     }
     else{
-        cout<< "Fruit is not present";
+        cout<< "Fruit is not present" <<endl;
     }
+
+    //supercool functionality!
+    h["newFruit"] = 200;
+    cout<<"New fruit cost: "<<h["newFruit"]<<endl;
+    h["newFruit"] += 20;
+
+    cout<<"New fruit updated cost: "<<h["newFruit"]<<endl;
 
 
     return 0;
