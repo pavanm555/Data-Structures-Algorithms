@@ -1,0 +1,5 @@
+Storing a Graph
+-> Ajacency List, O(x) efficient
+-> Adjacency Matrix, O(v^2) too much space
+-> Edge List
+-> 2D Matrix
